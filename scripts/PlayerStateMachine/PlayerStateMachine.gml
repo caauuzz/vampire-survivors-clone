@@ -15,7 +15,7 @@ function PlayerStateFree()
 	else
 	{
 		// Não estou me movendo
-		spd = lerp(spd, 0, .2);
+		spd = lerp(spd, 0, .3);
 		
 		if (abs(hsp) < 0.3) or (abs(vsp) < 0.3) sprite_index = sPlayerIdle;
 	}
