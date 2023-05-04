@@ -36,6 +36,9 @@ ToggleCameraMode = function()
 
 #endregion
 
+#region Camera Propeties
+
+// Lista de modos de camera
 enum cam_mode
 {
 	cc_static,
@@ -45,9 +48,9 @@ enum cam_mode
 	cc_disabled
 }
 
+// Variáveis globais da camera, útil para serem utilizadas em outros lugares/objetos.
 global.targetX = 0;
 global.targetY = 0;
-
 global.cameraX = 0;
 global.cameraY = 0;
 global.cameraWidth = 320;
@@ -55,15 +58,23 @@ global.cameraHeight = 180;
 global.cameraFollowTarget = noone;
 global.cameraFollowSpeed = 0;
 global.cameraMode = cam_mode.cc_disabled;
-
 global.windowScale = 4;
 
-forceDisable = false;
-
+// Ajustando a surface padrão (Desligando o mode de Pixel Perfect Camera).
 surface_resize(application_surface, global.cameraWidth * global.windowScale, global.cameraHeight * global.windowScale);
+
+// Setando o tamanho da janela do jogo.
 window_set_size(global.cameraWidth * global.windowScale, global.cameraHeight * global.windowScale);
 
+// Setando o tamanho da GUI do jogo.
 display_set_gui_size(640, 360);
+
+// Forçando o modo Disabled da camera.
+forceDisable = false;
+
+#endregion
+
+#region Methods
 
 /// @method SetCameraFollow(followTarget, followSpeed)
 SetCameraFollow = function(_followTarget, _followSpeed)
@@ -91,6 +102,7 @@ SetCameraFollow = function(_followTarget, _followSpeed)
 	}	
 }
 
+// Set Camera Disabled
 SetCameraDisabled = function()
 {
 	if (instance_exists(oPlayer) && !forceDisable)
@@ -98,3 +110,5 @@ SetCameraDisabled = function()
 		global.cameraMode = cam_mode.cc_follow;
 	}	
 }
+
+#endregion
