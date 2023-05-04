@@ -7,4 +7,4 @@ dir = 0;
 spdMax = 1.5;
 spd = 0;
 
-state = -1;
+state = undefined;
