@@ -17,7 +17,7 @@ switch (global.cameraMode)
 	
 	case cam_mode.cc_follow:
 		debug_camera_mode_text = debug_follow_mode_text;
-		SetCameraFollow(oPlayer, 0.1);
+		SetCameraFollow(oPlayer, 0.2);
 	break;
 	
 	#endregion
