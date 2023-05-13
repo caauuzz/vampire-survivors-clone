@@ -31,3 +31,11 @@ function QuickDrawText(_font, _halign, _valign, _color, _alpha, _posX, _posY, _t
 	draw_set_color(c_white);
 	draw_set_alpha(1);
 }
+
+/// @function SwitchState(state, [resetImageIndex]);
+function SwitchState(_state, _resetImageIndex = true)
+{
+	if (_resetImageIndex) image_index = 0;
+	state = _state;
+	show_debug_message("Switch to: " + string(_state));
+}

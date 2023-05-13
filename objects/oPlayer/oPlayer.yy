@@ -37,7 +37,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Entites",
+    "path": "folders/Objects/Entites.yy",
   },
 }

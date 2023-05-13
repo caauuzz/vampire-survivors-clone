@@ -7,4 +7,7 @@ dir = 0;
 spdMax = 1.5;
 spd = 0;
 
+hpMax = 100;
+hp = hpMax;
+
 state = undefined;
