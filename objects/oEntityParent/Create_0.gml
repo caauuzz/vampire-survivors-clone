@@ -10,4 +10,6 @@ spd = 0;
 hpMax = 100;
 hp = hpMax;
 
+damage = 1;
+
 state = undefined;

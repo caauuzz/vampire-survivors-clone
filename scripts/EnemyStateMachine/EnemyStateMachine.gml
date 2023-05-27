@@ -8,7 +8,7 @@ function EnemyStateIdle()
 		SwitchState(EnemyStateFollow, true);
 	}
 	
-	show_debug_message("Enemy: IDLE STATE");
+	//show_debug_message("Enemy: IDLE STATE");
 }
 
 function EnemyStateFollow()
@@ -23,5 +23,5 @@ function EnemyStateFollow()
 		SwitchState(EnemyStateIdle, true);
 	}
 	
-	show_debug_message("Enemy: FOLLOW STATE");
+	//show_debug_message("Enemy: FOLLOW STATE");
 }

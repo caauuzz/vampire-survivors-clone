@@ -37,5 +37,5 @@ function SwitchState(_state, _resetImageIndex = true)
 {
 	if (_resetImageIndex) image_index = 0;
 	state = _state;
-	show_debug_message("Switch to: " + string(_state));
+	//show_debug_message("Switch to: " + string(_state));
 }
